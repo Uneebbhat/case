@@ -4,39 +4,31 @@ import React, { useState } from "react";
 import {
   Card,
   CardHeader,
-  CardTitle,
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CaseData } from "@/app/types/case";
-
-import { Document, Page, pdfjs } from "react-pdf";
-
-// Setting worker src for react-pdf
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import Link from "next/link";
 
 interface CaseCardProps {
   caseData: CaseData;
 }
 
+
+
 const CaseCard: React.FC<CaseCardProps> = ({ caseData }) => {
   const [isFavourite, setIsFavourite] = useState(false);
-  const [numPages, setNumPages] = useState<number | null>(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  const { caseTitle, caseStatus, caseDescription, pdfUrl } = caseData;
-
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
-    setNumPages(numPages);
-    setPageNumber(1);
-  }
+  const { caseStatus, pdfUrl, caseId } = caseData;
+  console.log(caseData.caseId);
 
   return (
-    <Card className="max-w-3xl mx-auto">
+    <Card>
       <CardHeader>
         <div className="flex items-center justify-between">
-          <CardTitle className="text-2xl">{caseTitle}</CardTitle>
+          <span className="inline-block rounded-full border border-green-800 bg-green-100 text-green-900 px-3 py-1 text-xs font-semibold">
+            {caseStatus}
+          </span>
           <Button
             variant="ghost"
             size="icon"
@@ -72,49 +64,20 @@ const CaseCard: React.FC<CaseCardProps> = ({ caseData }) => {
             )}
           </Button>
         </div>
-        <div className="mt-2">
-          <span className="inline-block rounded-full border border-green-800 bg-green-100 text-green-900 px-3 py-1 text-xs font-semibold">
-            {caseStatus}
-          </span>
-        </div>
       </CardHeader>
 
       <CardContent>
-        <p className="mb-4">{caseDescription}</p>
-
-        {/* PDF Viewer */}
         {pdfUrl ? (
-          <div className="border rounded shadow-md">
-            <Document
-              file={pdfUrl}
-              onLoadSuccess={onDocumentLoadSuccess}
-              loading={<p>Loading PDF...</p>}
-              className="react-pdf__Document"
+          <div className="flex flex-col items-center justify-center p-8 border rounded shadow-md bg-gray-50">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              className="w-16 h-16 text-red-600"
             >
-              <Page pageNumber={pageNumber} className="react-pdf__Page" />
-            </Document>
-            <div className="flex justify-between items-center p-2 bg-gray-100">
-              <p>
-                Page {pageNumber} of {numPages}
-              </p>
-              <div>
-                <Button
-                  size="sm"
-                  onClick={() => setPageNumber((prev) => Math.max(prev - 1, 1))}
-                  disabled={pageNumber <= 1}
-                  className="mr-2"
-                >
-                  Previous
-                </Button>
-                <Button
-                  size="sm"
-                  onClick={() => setPageNumber((prev) => (numPages ? Math.min(prev + 1, numPages) : prev))}
-                  disabled={numPages ? pageNumber >= numPages : true}
-                >
-                  Next
-                </Button>
-              </div>
-            </div>
+              <path d="M6 2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13a1 1 0 0 1-1-1V3.5zM8 13h8v2H8v-2zm0 4h5v2H8v-2z" />
+            </svg>
+            <h2>{caseData.caseTitle}</h2>
           </div>
         ) : (
           <p>No PDF available.</p>
@@ -122,7 +85,10 @@ const CaseCard: React.FC<CaseCardProps> = ({ caseData }) => {
       </CardContent>
 
       <CardFooter className="pt-2 flex justify-end">
-        <Button className="cursor-pointer w-full">Extract Case</Button>
+        <Button className="cursor-pointer w-full" asChild>
+          <Link href={`/create-case/${caseId}`}>
+          Extract Case</Link>
+        </Button>
       </CardFooter>
     </Card>
   );

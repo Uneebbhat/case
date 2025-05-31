@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "caseId": 1,
     "caseTitle": "Case 1",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
@@ -10,7 +10,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 2,
+    "caseId": 2,
     "caseTitle": "Case 2",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Closed",
@@ -20,7 +20,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 3,
+    "caseId": 3,
     "caseTitle": "Case 3",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Pending",
@@ -30,7 +30,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 4,
+    "caseId": 4,
     "caseTitle": "Case 4",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
@@ -40,7 +40,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 5,
+    "caseId": 5,
     "caseTitle": "Case 5",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Closed",
@@ -50,7 +50,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 6,
+    "caseId": 6,
     "caseTitle": "Case 6",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Pending",
@@ -60,7 +60,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 7,
+    "caseId": 7,
     "caseTitle": "Case 7",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
@@ -70,7 +70,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 8,
+    "caseId": 8,
     "caseTitle": "Case 8",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Closed",
@@ -80,7 +80,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 9,
+    "caseId": 9,
     "caseTitle": "Case 9",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
@@ -90,7 +90,7 @@
     "pdfUrl": "/dummy_case_document.pdf"
   },
   {
-    "id": 10,
+    "caseId": 10,
     "caseTitle": "Case 10",
     "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Pending",

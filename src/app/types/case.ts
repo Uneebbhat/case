@@ -4,7 +4,7 @@ export enum CaseStatus {
 }
 
 export interface CaseData {
-  id: string;
+  caseId: string;
   caseTitle: string;
   caseDescription: string;
   caseStatus: CaseStatus;
