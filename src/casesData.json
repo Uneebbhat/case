@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "caseTitle": "Case 1",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-01-15",
+    "endDate": "2025-03-20",
+    "caseType": "debt"
+  },
+  {
+    "id": 2,
+    "caseTitle": "Case 2",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-02-01",
+    "endDate": "2025-04-15",
+    "caseType": "murder"
+  },
+  {
+    "id": 3,
+    "caseTitle": "Case 3",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-01-20",
+    "endDate": "2025-03-30",
+    "caseType": "dead"
+  },
+  {
+    "id": 4,
+    "caseTitle": "Case 4",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-02-10",
+    "endDate": "2025-05-01",
+    "caseType": "debt"
+  },
+  {
+    "id": 5,
+    "caseTitle": "Case 5",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-01-25",
+    "endDate": "2025-04-10",
+    "caseType": "murder"
+  },
+  {
+    "id": 6,
+    "caseTitle": "Case 6",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-02-15",
+    "endDate": "2025-05-15",
+    "caseType": "dead"
+  },
+  {
+    "id": 7,
+    "caseTitle": "Case 7",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-01-30",
+    "endDate": "2025-04-20",
+    "caseType": "debt"
+  },
+  {
+    "id": 8,
+    "caseTitle": "Case 8",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-02-20",
+    "endDate": "2025-05-30",
+    "caseType": "murder"
+  },
+  {
+    "id": 9,
+    "caseTitle": "Case 9",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-02-05",
+    "endDate": "2025-04-25",
+    "caseType": "dead"
+  },
+  {
+    "id": 10,
+    "caseTitle": "Case 10",
+    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseStatus": "Active",
+    "startDate": "2025-02-25",
+    "endDate": "2025-06-01",
+    "caseType": "debt"
+  }
+]
