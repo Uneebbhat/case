@@ -4,6 +4,7 @@ import { useState } from "react";
 import { CaseData, CaseStatus } from "@/app/types/case";
 import caseData from "@/casesData.json";
 import axios from "axios";
+import { toast } from "sonner";
 
 interface DateRange {
   from: Date;
@@ -69,9 +70,14 @@ const useGetCases = () => {
       });
       setCases(data);
       */
-    } catch (error) {
-      console.error("Error filtering cases:", error);
-      setCases([]);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error("Error filtering cases:", error);
+        setCases([]);
+      } else {
+        console.error("Unexpected error", error);
+        toast.error("An unexpected error occurred");
+      }
     } finally {
       setLoading(false);
     }

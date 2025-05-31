@@ -35,9 +35,14 @@ const useSignup = () => {
 
       // navigating to the dashboard page after success
       router.push("/dashboard");
-    } catch (error: any) {
-      console.log("Got an error");
-      toast.error("Ann error occured during signup");
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error("Signup error:", error);
+        toast.error("An error occurred during signup");
+      } else {
+        console.error("Unexpected signup  error", error);
+        toast.error("An unexpected error occurred during signup");
+      }
     } finally {
       setIsLoading(false);
     }

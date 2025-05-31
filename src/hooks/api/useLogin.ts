@@ -33,9 +33,14 @@ const useLogin = () => {
 
       // navigating to the dashboard page after success
       router.push("/dashboard");
-    } catch (error: any) {
-      console.log("Got an error");
-      toast.error("Ann error occured during login");
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.log("Got an error");
+        toast.error("Ann error occured during login");
+      } else {
+        console.error("Unexpected login error", error);
+        toast.error("An unexpected error occurred during login");
+      }
     } finally {
       setIsLoading(false);
     }

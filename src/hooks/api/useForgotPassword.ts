@@ -25,9 +25,14 @@ const useForgotPassword = () => {
 
       // Resetting the form after submitting it
       setFormData({ email: "" });
-    } catch (error: any) {
-      console.log("An error occured while sending email");
-      toast.error("An error occured while sending email");
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.log("An error occured while sending email");
+        toast.error("An error occured while sending email");
+      } else {
+        console.error("Unexpected error", error);
+        toast.error("An unexpected error occurred");
+      }
     } finally {
       setIsLoading(false);
     }

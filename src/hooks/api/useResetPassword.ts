@@ -31,9 +31,14 @@ const useResetPassword = () => {
         confirmPassword: "",
       });
       setSuccess(true);
-    } catch (error: any) {
-      console.log("An error occured while setting up new password");
-      toast.error("An error occured while setting up new password");
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.log("An error occured while setting up new password");
+        toast.error("An error occured while setting up new password");
+      } else {
+        console.error("Unexpected reset password error", error);
+        toast.error("An unexpected error occurred during resetting password");
+      }
     } finally {
       setIsLoading(false);
     }

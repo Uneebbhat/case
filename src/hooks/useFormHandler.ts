@@ -3,7 +3,7 @@
 import { HandleChangeType } from "@/app/types/event";
 import { useState } from "react";
 
-const useFormHandler = <T extends Record<string, any>>(initialState: T) => {
+const useFormHandler = <T extends Record<string, unknown>>(initialState: T) => {
   const [formData, setFormData] = useState<T>(initialState);
 
   const handleOnChange = (e: HandleChangeType) => {
