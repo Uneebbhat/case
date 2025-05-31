@@ -2,91 +2,101 @@
   {
     "id": 1,
     "caseTitle": "Case 1",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
     "startDate": "2025-01-15",
     "endDate": "2025-03-20",
-    "caseType": "debt"
+    "caseType": "debt",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 2,
     "caseTitle": "Case 2",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
-    "caseStatus": "Active",
+    "caseDescription": "This is a brief description of the case.",
+    "caseStatus": "Closed",
     "startDate": "2025-02-01",
-    "endDate": "2025-04-15",
-    "caseType": "murder"
+    "endDate": "2025-04-10",
+    "caseType": "murder",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 3,
     "caseTitle": "Case 3",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
-    "caseStatus": "Active",
-    "startDate": "2025-01-20",
-    "endDate": "2025-03-30",
-    "caseType": "dead"
+    "caseDescription": "This is a brief description of the case.",
+    "caseStatus": "Pending",
+    "startDate": "2025-03-01",
+    "endDate": "2025-06-05",
+    "caseType": "debt",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 4,
     "caseTitle": "Case 4",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
-    "startDate": "2025-02-10",
-    "endDate": "2025-05-01",
-    "caseType": "debt"
+    "startDate": "2025-04-10",
+    "endDate": "2025-06-15",
+    "caseType": "dead",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 5,
     "caseTitle": "Case 5",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
-    "caseStatus": "Active",
+    "caseDescription": "This is a brief description of the case.",
+    "caseStatus": "Closed",
     "startDate": "2025-01-25",
-    "endDate": "2025-04-10",
-    "caseType": "murder"
+    "endDate": "2025-03-05",
+    "caseType": "murder",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 6,
     "caseTitle": "Case 6",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
-    "caseStatus": "Active",
-    "startDate": "2025-02-15",
-    "endDate": "2025-05-15",
-    "caseType": "dead"
+    "caseDescription": "This is a brief description of the case.",
+    "caseStatus": "Pending",
+    "startDate": "2025-03-10",
+    "endDate": "2025-05-25",
+    "caseType": "dead",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 7,
     "caseTitle": "Case 7",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
-    "startDate": "2025-01-30",
-    "endDate": "2025-04-20",
-    "caseType": "debt"
+    "startDate": "2025-02-20",
+    "endDate": "2025-04-01",
+    "caseType": "debt",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 8,
     "caseTitle": "Case 8",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
-    "caseStatus": "Active",
-    "startDate": "2025-02-20",
-    "endDate": "2025-05-30",
-    "caseType": "murder"
+    "caseDescription": "This is a brief description of the case.",
+    "caseStatus": "Closed",
+    "startDate": "2025-01-18",
+    "endDate": "2025-02-25",
+    "caseType": "murder",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 9,
     "caseTitle": "Case 9",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
+    "caseDescription": "This is a brief description of the case.",
     "caseStatus": "Active",
-    "startDate": "2025-02-05",
-    "endDate": "2025-04-25",
-    "caseType": "dead"
+    "startDate": "2025-03-15",
+    "endDate": "2025-05-01",
+    "caseType": "dead",
+    "pdfUrl": "/dummy_case_document.pdf"
   },
   {
     "id": 10,
     "caseTitle": "Case 10",
-    "caseDescription": "This is a brief description of the case. It provides an overview of the case details and relevant information.",
-    "caseStatus": "Active",
-    "startDate": "2025-02-25",
-    "endDate": "2025-06-01",
-    "caseType": "debt"
+    "caseDescription": "This is a brief description of the case.",
+    "caseStatus": "Pending",
+    "startDate": "2025-04-01",
+    "endDate": "2025-06-10",
+    "caseType": "debt",
+    "pdfUrl": "/dummy_case_document.pdf"
   }
 ]
