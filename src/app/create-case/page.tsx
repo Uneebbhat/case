@@ -112,14 +112,14 @@ export default function CreateCasePage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {cases.map((caseItem, idx) => (
-                <CaseCard key={caseItem.id || idx} caseData={caseItem} />
+                <CaseCard key={caseItem.caseId || idx} caseData={caseItem} />
               ))}
             </div>
           </>
         ) : (
           <div className="flex items-center justify-center">
             <Image
-              src={"/data-not-found.jpg"}
+              src={"/data-not-found.png"}
               alt="No data found"
               width={500}
               height={500}

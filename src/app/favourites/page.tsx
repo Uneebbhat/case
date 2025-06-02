@@ -1,4 +1,5 @@
 import CaseCard from "@/components/ui/CaseCard";
+import { CaseStatus } from "../types/case";
 
 export default function FavouritePage() {
   return (
@@ -10,7 +11,19 @@ export default function FavouritePage() {
       <section className="py-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[...Array(2)].map((_, idx) => (
-            <CaseCard key={idx} />
+            <CaseCard
+              key={idx}
+              caseData={{
+                caseId: idx.toString(),
+                caseTitle: `Case ${idx + 1}`,
+                caseDescription: `Case ${idx + 1}`,
+                caseStatus: CaseStatus.active,
+                startDate: new Date(),
+                endDate: new Date(),
+                caseType: "Debt",
+                pdfUrl: "/dummy_case_document.pdf",
+              }}
+            />
           ))}
         </div>
       </section>
