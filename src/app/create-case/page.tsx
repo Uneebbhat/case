@@ -107,13 +107,23 @@ export default function CreateCasePage() {
           <p>Loading cases...</p>
         ) : cases.length > 0 ? (
           <>
-            <p className="mb-4 text-sm text-gray-600">
-              Found {cases.length} case(s) matching your filters
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {cases.map((caseItem, idx) => (
-                <CaseCard key={caseItem.caseId || idx} caseData={caseItem} />
-              ))}
+            <div>
+              <div className="flex justify-end mb-4">
+                <Button>Export all</Button>
+              </div>
+              <div>
+                <p className="mb-4 text-sm text-gray-600">
+                  Found {cases.length} case(s) matching your filters
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {cases.map((caseItem, idx) => (
+                    <CaseCard
+                      key={caseItem.caseId || idx}
+                      caseData={caseItem}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </>
         ) : (

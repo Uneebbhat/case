@@ -1,3 +1,5 @@
+"use client";
+
 import CaseCard from "@/components/ui/CaseCard";
 import { CaseStatus } from "../types/case";
 

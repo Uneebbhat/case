@@ -6,9 +6,8 @@ import useResetPassword from "@/hooks/api/useResetPassword";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Eye, EyeOff, Loader2 } from "lucide-react";
+import { ArrowLeft, Eye, EyeOff, Loader2 } from "lucide-react";
 import ResetPasswordSuccessCard from "../ResetPasswordSuccessCard";
-// import ResetPasswordForm from "@/components/forms/ResetPasswordForm";
 import {
   Card,
   CardContent,
@@ -30,6 +29,14 @@ const ResetPasswordForm = () => {
     <>
       <Card className="w-full max-w-[500px]">
         <CardHeader>
+          <Button
+            variant={"ghost"}
+            size={"icon"}
+            className="cursor-pointer"
+            onClick={() => window.history.back()}
+          >
+            <ArrowLeft />
+          </Button>
           <CardTitle>Create new password</CardTitle>
           <CardDescription>
             Enter your new password and login again

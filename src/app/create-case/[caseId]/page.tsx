@@ -1,7 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Metadata } from "next";
+
+const metadata: Metadata = {
+  title: "Create Case",
+};
 
 export default function CreateCaseIdPage() {
   return (
@@ -10,11 +16,45 @@ export default function CreateCaseIdPage() {
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Create Case
         </h3>
-        <Button>Export xls</Button>
+        <Button>Export to xls</Button>
       </div>
       <section className="py-5">
-        <div className="flex flex-col md:flex-row items-center gap-x-5 gap-y-2 md:gap-y-0">
-          <Image src={"/pdf.jpg"} alt={"Title"} width={1000} height={1000} />
+        <div className="space-y-4">
+          <div className="space-y-2">
+            <Label htmlFor="phone-number">Phone Number</Label>
+            <Input type="number" id="phone-number" placeholder="Phone Number" />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="address-line">Address Line 1</Label>
+            <Input type="text" id="address-line" placeholder="Address Line 1" />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="city">City</Label>
+            <Input type="text" id="city" placeholder="City" />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="state">State</Label>
+            <Input type="text" id="state" placeholder="State" />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="zip">Zip</Label>
+            <Input type="text" id="zip" placeholder="Zip" />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="google-sheet-id">
+              Enter your Google Sheet ID (from the URL)
+            </Label>
+            <Input
+              type="url"
+              id="google-sheet-id"
+              placeholder="Google Sheet ID"
+            />
+          </div>
         </div>
       </section>
     </>

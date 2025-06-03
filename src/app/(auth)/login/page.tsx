@@ -1,8 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import LoginForm from "@/components/forms/LoginForm";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -21,20 +19,6 @@ export default function LoginPage() {
               Enter your credentials to login
             </p>
             <LoginForm />
-            <div className="my-4 flex items-center">
-              <div className="flex-grow h-px bg-gray-200" />
-              <span className="mx-2 text-gray-400">or</span>
-              <div className="flex-grow h-px bg-gray-200" />
-            </div>
-            <Button className="w-full cursor-pointer" variant={"outline"}>
-              <Image
-                src="https://www.svgrepo.com/show/475656/google-color.svg"
-                alt="Google"
-                width={20}
-                height={20}
-              />
-              Google
-            </Button>
             <p className="mt-6 text-center text-gray-600 text-sm font-medium">
               Don&apos;t have an account?{" "}
               <Link href="/signup" className="text-blue-500 underline">
