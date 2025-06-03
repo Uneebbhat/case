@@ -3,18 +3,14 @@
 import * as React from "react";
 import {
   BriefcaseBusiness,
-  Frame,
   GalleryVerticalEnd,
   History,
   LayoutDashboard,
-  Map,
-  PieChart,
   Settings,
   Star,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
 import { NavUser } from "@/components/nav-user";
 import { TeamSwitcher } from "@/components/team-switcher";
 import {

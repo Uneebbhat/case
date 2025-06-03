@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { CaseData, CaseStatus } from "@/app/types/case";
 import caseData from "@/casesData.json";
-import axios from "axios";
+// import axios from "axios";
 import { toast } from "sonner";
 
 interface DateRange {
@@ -26,7 +26,7 @@ const useGetCases = () => {
       setLoading(true);
 
       // Option 1: Client-side filtering using the imported JSON data
-      let filteredCases = [...caseData] as any[];
+      let filteredCases = [...caseData] as unknown as CaseData[];
 
       // Filter by date range
       if (filters.dateRange) {

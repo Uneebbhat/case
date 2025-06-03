@@ -50,22 +50,22 @@ export default function SignupPage() {
           <div className="flex flex-col gap-6 items-center w-full px-16">
             <div className="bg-black bg-opacity-80 text-white p-4 rounded-lg shadow-lg max-w-xs rotate-[-7deg]">
               <span className="text-sm">
-                "Thanks to this tool, my land dispute documents were ready in
-                minutes. Truly a lifesaver."
+                &quot;Thanks to this tool, my land dispute documents were ready
+                in minutes. Truly a lifesaver.&quot;
                 <br />— Ahmed R.
               </span>
             </div>
             <div className="bg-black bg-opacity-80 text-white p-4 rounded-lg shadow-lg max-w-xs rotate-[7deg] ml-16">
               <span className="text-sm">
-                "My lawyer used this platform to pull all custody case files
-                quickly. Super efficient!"
+                &quot;My lawyer used this platform to pull all custody case
+                files quickly. Super efficient!&quot;
                 <br />— Maria T.
               </span>
             </div>
             <div className="bg-black bg-opacity-80 text-white p-4 rounded-lg shadow-lg max-w-xs rotate-[-4deg] mt-0">
               <span className="text-sm">
-                "Helped us extract the right info fast during a criminal case.
-                Highly reliable."
+                &quot;Helped us extract the right info fast during a criminal
+                case. Highly reliable.&quot;
                 <br />— Imtiaz H.
               </span>
             </div>

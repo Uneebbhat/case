@@ -12,7 +12,7 @@ import {
   SelectTrigger,
 } from "@/components/ui/select";
 import useGetCases from "@/hooks/api/useGetCases";
-import { CaseData, CaseStatus } from "@/app/types/case";
+import { CaseStatus } from "@/app/types/case";
 import Image from "next/image";
 
 export default function CreateCasePage() {

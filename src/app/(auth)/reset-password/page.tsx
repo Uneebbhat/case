@@ -1,9 +1,6 @@
 "use client";
 
 import ResetPasswordForm from "@/components/forms/ResetPasswordForm";
-import ResetPasswordSuccessCard from "@/components/ResetPasswordSuccessCard";
-
-import useResetPassword from "@/hooks/api/useResetPassword";
 
 export default function ResetPasswordPage() {
   return (

@@ -11,5 +11,5 @@ export interface CaseData {
   startDate: Date;
   endDate: Date;
   caseType: string;
-  pdfUrl: any;
+  pdfUrl: string | unknown;
 }

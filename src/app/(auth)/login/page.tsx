@@ -36,7 +36,7 @@ export default function LoginPage() {
               Google
             </Button>
             <p className="mt-6 text-center text-gray-600 text-sm font-medium">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link href="/signup" className="text-blue-500 underline">
                 Signup
               </Link>
@@ -51,22 +51,22 @@ export default function LoginPage() {
           <div className="flex flex-col gap-6 items-center w-full px-16">
             <div className="bg-black bg-opacity-80 text-white p-4 rounded-lg shadow-lg max-w-xs rotate-[7deg]">
               <span className="text-sm">
-                “We needed documents for a corporate case urgently—this portal
-                delivered instantly.”
+                &apos;We needed documents for a corporate case urgently—this
+                portal delivered instantly.&apos;
                 <br />— Hassan J.
               </span>
             </div>
             <div className="bg-black bg-opacity-80 text-white p-4 rounded-lg shadow-lg max-w-xs rotate-[-7deg] ml-16">
               <span className="text-sm">
-                “Made it easy to gather and share data during my contract
-                dispute. Very helpful.”
+                &apos;Made it easy to gather and share data during my contract
+                dispute. Very helpful.&apos;
                 <br />— Nimra A.
               </span>
             </div>
             <div className="bg-black bg-opacity-80 text-white p-4 rounded-lg shadow-lg max-w-xs rotate-[4deg] mt-0">
               <span className="text-sm">
-                “My lawyer used this platform to pull all custody case files
-                quickly. Super efficient!”
+                &apos;My lawyer used this platform to pull all custody case
+                files quickly. Super efficient!&apos;
                 <br />— Maria T.
               </span>
             </div>
