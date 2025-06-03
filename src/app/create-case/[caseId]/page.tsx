@@ -3,11 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Metadata } from "next";
-
-const metadata: Metadata = {
-  title: "Create Case",
-};
 
 export default function CreateCaseIdPage() {
   return (
